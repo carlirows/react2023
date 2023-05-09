@@ -1,2 +1,2 @@
 # react2023
-React training and testiong
+React training and testing
