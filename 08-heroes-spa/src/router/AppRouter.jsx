@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
             element: <DcPage/>,
         },
         {
-            path: '/hero',
+            path: '/hero/:id',
             element: <HeroPage/>,
         },
         {
