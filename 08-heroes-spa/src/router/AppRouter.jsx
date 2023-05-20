@@ -5,12 +5,16 @@ import { LoginPage } from "../auth/pages/LoginPage";
 import { MarvelPage, DcPage } from "../heroes";
 import { HeroPage } from "../heroes/pages/HeroPage";
 import { SearchHero } from "../heroes/pages/SearchHero";
+import { PrivateRoute } from "./PrivateRoute";
+import { PublicRoute } from "./PublicRoute";
 
 
 export const router = createBrowserRouter([
     {
       path: "/",
-      element: <HeroesApp />,
+      element: <PrivateRoute>
+          <HeroesApp />        
+        </PrivateRoute>,
       errorElement: <ErrorPage />,
       children: [
         {
@@ -33,6 +37,9 @@ export const router = createBrowserRouter([
     },
     {
       path: "/login",
-      element: <LoginPage />,
+      element: <PublicRoute>
+        <LoginPage />
+      </PublicRoute>
+      
     },
   ]);
