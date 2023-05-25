@@ -12,29 +12,24 @@ import { LoginPage, RegisterPage } from "../auth/pages";
   export const router = createBrowserRouter([
     {
         path: '/',
-        element: <JournalPage />,
-        children: [
-
-
-
-          ],
+        element: <JournalPage />
     },
     {
-        path: "/login",
-        element: <LoginPage />,
-      },
-      {
-        path: "/register",
-        element: <RegisterPage />,
-      },
-      {
-        path: "/*",
-        element: <Navigate to="/auth/login" />,
-      },
-      {
-        path: "/auth/login",
-        element: <LoginPage />,
-      },
+      path: "/login",
+      element: <LoginPage />,
+    },
+    {
+      path: "/auth/register",
+      element: <RegisterPage />,
+    },
+    {
+      path: "/*",
+      element: <Navigate to="/auth/login" />,
+    },
+    {
+      path: "/auth/login",
+      element: <LoginPage />,
+    },
 
   ]);
   
