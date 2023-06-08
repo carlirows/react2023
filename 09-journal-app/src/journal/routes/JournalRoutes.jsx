@@ -1,14 +1,13 @@
-// create routes for the journal app
-import { Navigate, createBrowserRouter} from 'react-router-dom';
-import { JournalPage } from '../pages';
+import { Navigate, Route, Routes } from "react-router-dom"
+import { JournalPage } from "../pages/JournalPage"
 
-export const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <JournalPage />
-    },
-    {
-        path: '/*',
-        element: <Navigate to='/' />
-    }
-]);
+
+export const JournalRoutes = () => {
+  return (
+    <Routes>
+        <Route path="/" element={ <JournalPage /> } />
+
+        <Route path="/*" element={ <Navigate to="/" /> } />
+    </Routes>
+  )
+}

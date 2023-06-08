@@ -1,35 +1,38 @@
-import {
-    createBrowserRouter,
-    Navigate,
-    // RouterProvider
-  } from "react-router-dom";
-// import { AppJournal } from "../AppJournal";
-import { JournalPage } from "../journal/pages/JournalPage";
-// import { router as authRouter } from "../auth/routes/AuthRoutes";
-import { LoginPage, RegisterPage } from "../auth/pages";
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { AuthRoutes } from '../auth/routes/AuthRoutes';
+import { useSelector } from 'react-redux';
+
+import { JournalRoutes } from '../journal/routes/JournalRoutes';
+import { CheckingAuth } from '../ui/';
+import { useCheckAuth } from '../hooks';
 
 
-  export const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <JournalPage />
-    },
-    {
-      path: "/login",
-      element: <LoginPage />,
-    },
-    {
-      path: "/auth/register",
-      element: <RegisterPage />,
-    },
-    {
-      path: "/*",
-      element: <Navigate to="/auth/login" />,
-    },
-    {
-      path: "/auth/login",
-      element: <LoginPage />,
-    },
+export const AppRouter = () => {
 
-  ]);
-  
+  const status = useCheckAuth();
+  console.log('status', status);
+
+  if ( status === 'checking' ) {
+    return <CheckingAuth />
+  }
+
+  return (
+    <Routes>
+
+        {
+          (status === 'authenticated')
+           ? <Route path="/*" element={ <JournalRoutes /> } />
+           : <Route path="/auth/*" element={ <AuthRoutes /> } />
+        }
+
+        <Route path='/*' element={ <Navigate to='/auth/login' />  } />
+
+        {/* Login y Registro */}
+        {/* <Route path="/auth/*" element={ <AuthRoutes /> } /> */}
+
+        {/* JournalApp */}
+        {/* <Route path="/*" element={ <JournalRoutes /> } /> */}
+
+    </Routes>
+  )
+}

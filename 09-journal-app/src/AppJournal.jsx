@@ -1,9 +1,10 @@
-import { Outlet } from "react-router-dom"
+import { AppRouter } from './router/AppRouter';
+import { AppTheme } from './theme';
 
 export const AppJournal = () => {
   return (
-    <>
-      {Outlet}
-    </>
+    <AppTheme>
+        <AppRouter />
+    </AppTheme>
   )
 }

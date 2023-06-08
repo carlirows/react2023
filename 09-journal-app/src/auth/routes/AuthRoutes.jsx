@@ -1,21 +1,14 @@
-import {
-    Navigate,
-    createBrowserRouter,
-  } from "react-router-dom";
+import { Navigate, Route, Routes } from 'react-router-dom';
+import { LoginPage, RegisterPage } from '../pages';
 
-import { LoginPage, RegisterPage } from "../pages";
 
-  export const router = createBrowserRouter([
-    {
-      path: "login",
-      element: <LoginPage />,
-    },
-    {
-      path: "register",
-      element: <RegisterPage />,
-    },
-    {
-      path: "/*",
-      element: <Navigate to="/auth/login" />,
-    },
-  ]);
+export const AuthRoutes = () => {
+  return (
+    <Routes>
+        <Route path="login" element={ <LoginPage /> } />
+        <Route path="register" element={ <RegisterPage /> } />
+
+        <Route path='/*' element={ <Navigate to="/auth/login" /> } />
+    </Routes>
+  )
+}

@@ -1,31 +1,47 @@
-import {LogoutOutlined, MenuOutlined} from "@mui/icons-material"
-import { AppBar , IconButton, Toolbar, Grid, Typography } from "@mui/material"
+import { useDispatch } from 'react-redux';
+import { AppBar, Grid, IconButton, Toolbar, Typography } from '@mui/material';
+import { LogoutOutlined, MenuOutlined } from '@mui/icons-material';
+import { startLogout } from '../../store/auth';
+
 
 // eslint-disable-next-line react/prop-types
-export const NavBar = ({drawerWidth =240}) => {
+export const NavBar = ({ drawerWidth = 240 }) => {
+
+    const dispatch = useDispatch();
+
+    const onLogout = () => {
+        dispatch( startLogout() );
+    }
+
+
   return (
     <AppBar 
-        position="fixed" 
-        sx={{
-            width: {sm:`calc(100% - ${drawerWidth}px)`},
-            ml: {sm: `${drawerWidth}px`}
-        }}
+        position='fixed'
+        sx={{ 
+            width: { sm: `calc(100% - ${ drawerWidth }px)` },
+            ml: { sm: `${ drawerWidth }px` }
+         }}
     >
         <Toolbar>
             <IconButton
-                color="inherit"
+                color='inherit'
                 edge="start"
-                aria-label="menu"
-                sx={{mr:2 , display:{sm:'none'}}}
+                sx={{ mr: 2, display: { sm: 'none' } }}
             >
                 <MenuOutlined />
             </IconButton>
+
             <Grid container direction='row' justifyContent='space-between' alignItems='center'>
-                <Typography variant='h6' noWrap component='div'>Journal App</Typography>
-                <IconButton color='error'>
-                    <LogoutOutlined/>
+                <Typography variant='h6' noWrap component='div'> JournalApp </Typography>
+
+                <IconButton 
+                    color='error'
+                    onClick={ onLogout }
+                >
+                    <LogoutOutlined />
                 </IconButton>
             </Grid>
+
         </Toolbar>
     </AppBar>
   )

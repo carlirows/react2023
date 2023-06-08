@@ -176,6 +176,13 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.19.0"
 
+"@babel/runtime@^7.12.1", "@babel/runtime@^7.9.2":
+  version "7.22.3"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@babel/runtime/-/runtime-7.22.3.tgz#0a7fce51d43adbf0f7b517a71f4c3aaca92ebcbb"
+  integrity sha1-Cn/OUdQ62/D3tRenH0w6rKkuvLs=
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.21.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.7":
   version "7.21.5"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@babel/runtime/-/runtime-7.21.5.tgz#8492dddda9644ae3bda3b45eabe87382caee7200"
@@ -466,10 +473,412 @@
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@eslint/js/-/js-8.41.0.tgz#080321c3b68253522f7646b55b577dd99d2950b3"
   integrity sha1-CAMhw7aCU1Ivdka1W1d92Z0pULM=
 
+"@firebase/analytics-compat@0.2.6":
+  version "0.2.6"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/analytics-compat/-/analytics-compat-0.2.6.tgz#50063978c42f13eb800e037e96ac4b17236841f4"
+  integrity sha1-UAY5eMQvE+uADgN+lqxLFyNoQfQ=
+  dependencies:
+    "@firebase/analytics" "0.10.0"
+    "@firebase/analytics-types" "0.8.0"
+    "@firebase/component" "0.6.4"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/analytics-types@0.8.0":
+  version "0.8.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/analytics-types/-/analytics-types-0.8.0.tgz#551e744a29adbc07f557306530a2ec86add6d410"
+  integrity sha1-VR50SimtvAf1VzBlMKLshq3W1BA=
+
+"@firebase/analytics@0.10.0":
+  version "0.10.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/analytics/-/analytics-0.10.0.tgz#9c6986acd573c6c6189ffb52d0fd63c775db26d7"
+  integrity sha1-nGmGrNVzxsYYn/tS0P1jx3XbJtc=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/installations" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/app-check-compat@0.3.7":
+  version "0.3.7"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/app-check-compat/-/app-check-compat-0.3.7.tgz#e150f61d653a0f2043a34dcb995616a717161839"
+  integrity sha1-4VD2HWU6DyBDo03LmVYWpxcWGDk=
+  dependencies:
+    "@firebase/app-check" "0.8.0"
+    "@firebase/app-check-types" "0.5.0"
+    "@firebase/component" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/app-check-interop-types@0.3.0":
+  version "0.3.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/app-check-interop-types/-/app-check-interop-types-0.3.0.tgz#b27ea1397cb80427f729e4bbf3a562f2052955c4"
+  integrity sha1-sn6hOXy4BCf3KeS786Vi8gUpVcQ=
+
+"@firebase/app-check-types@0.5.0":
+  version "0.5.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/app-check-types/-/app-check-types-0.5.0.tgz#1b02826213d7ce6a1cf773c329b46ea1c67064f4"
+  integrity sha1-GwKCYhPXzmoc93PDKbRuocZwZPQ=
+
+"@firebase/app-check@0.8.0":
+  version "0.8.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/app-check/-/app-check-0.8.0.tgz#b531ec40900af9c3cf1ec63de9094a0ddd733d6a"
+  integrity sha1-tTHsQJAK+cPPHsY96QlKDd1zPWo=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/app-compat@0.2.11":
+  version "0.2.11"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/app-compat/-/app-compat-0.2.11.tgz#6f9864a5663ba6da3042880f91641bc435addbce"
+  integrity sha1-b5hkpWY7ptowQogPkWQbxDWt284=
+  dependencies:
+    "@firebase/app" "0.9.11"
+    "@firebase/component" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/app-types@0.9.0":
+  version "0.9.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/app-types/-/app-types-0.9.0.tgz#35b5c568341e9e263b29b3d2ba0e9cfc9ec7f01e"
+  integrity sha1-NbXFaDQeniY7KbPSug6c/J7H8B4=
+
+"@firebase/app@0.9.11":
+  version "0.9.11"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/app/-/app-0.9.11.tgz#1892645682dd0b1695f4eb79ef21c0ebcc31c6f1"
+  integrity sha1-GJJkVoLdCxaV9Ot57yHA68wxxvE=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    idb "7.1.1"
+    tslib "^2.1.0"
+
+"@firebase/auth-compat@0.4.2":
+  version "0.4.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/auth-compat/-/auth-compat-0.4.2.tgz#cb65edc2fbd5f72fff32310409f2fd702b5145e7"
+  integrity sha1-y2XtwvvV9y//MjEECfL9cCtRRec=
+  dependencies:
+    "@firebase/auth" "0.23.2"
+    "@firebase/auth-types" "0.12.0"
+    "@firebase/component" "0.6.4"
+    "@firebase/util" "1.9.3"
+    node-fetch "2.6.7"
+    tslib "^2.1.0"
+
+"@firebase/auth-interop-types@0.2.1":
+  version "0.2.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/auth-interop-types/-/auth-interop-types-0.2.1.tgz#78884f24fa539e34a06c03612c75f222fcc33742"
+  integrity sha1-eIhPJPpTnjSgbANhLHXyIvzDN0I=
+
+"@firebase/auth-types@0.12.0":
+  version "0.12.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/auth-types/-/auth-types-0.12.0.tgz#f28e1b68ac3b208ad02a15854c585be6da3e8e79"
+  integrity sha1-8o4baKw7IIrQKhWFTFhb5to+jnk=
+
+"@firebase/auth@0.23.2":
+  version "0.23.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/auth/-/auth-0.23.2.tgz#9e6d8dd550a28053c1825fb98c7dc9b37119254d"
+  integrity sha1-nm2N1VCigFPBgl+5jH3Js3EZJU0=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    node-fetch "2.6.7"
+    tslib "^2.1.0"
+
+"@firebase/component@0.6.4":
+  version "0.6.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/component/-/component-0.6.4.tgz#8981a6818bd730a7554aa5e0516ffc9b1ae3f33d"
+  integrity sha1-iYGmgYvXMKdVSqXgUW/8mxrj8z0=
+  dependencies:
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/database-compat@0.3.4":
+  version "0.3.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/database-compat/-/database-compat-0.3.4.tgz#4e57932f7a5ba761cd5ac946ab6b6ab3f660522c"
+  integrity sha1-TleTL3pbp2HNWslGq2tqs/ZgUiw=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/database" "0.14.4"
+    "@firebase/database-types" "0.10.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/database-types@0.10.4":
+  version "0.10.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/database-types/-/database-types-0.10.4.tgz#47ba81113512dab637abace61cfb65f63d645ca7"
+  integrity sha1-R7qBETUS2rY3q6zmHPtl9j1kXKc=
+  dependencies:
+    "@firebase/app-types" "0.9.0"
+    "@firebase/util" "1.9.3"
+
+"@firebase/database@0.14.4":
+  version "0.14.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/database/-/database-0.14.4.tgz#9e7435a16a540ddfdeb5d99d45618e6ede179aa6"
+  integrity sha1-nnQ1oWpUDd/etdmdRWGObt4XmqY=
+  dependencies:
+    "@firebase/auth-interop-types" "0.2.1"
+    "@firebase/component" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    faye-websocket "0.11.4"
+    tslib "^2.1.0"
+
+"@firebase/firestore-compat@0.3.10":
+  version "0.3.10"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/firestore-compat/-/firestore-compat-0.3.10.tgz#a79330d02d863810a196b60bd33d1bfcb7f78c14"
+  integrity sha1-p5Mw0C2GOBChlrYL0z0b/Lf3jBQ=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/firestore" "3.12.1"
+    "@firebase/firestore-types" "2.5.1"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/firestore-types@2.5.1":
+  version "2.5.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/firestore-types/-/firestore-types-2.5.1.tgz#464b2ee057956599ca34de50eae957c30fdbabb7"
+  integrity sha1-Rksu4FeVZZnKNN5Q6ulXww/bq7c=
+
+"@firebase/firestore@3.12.1":
+  version "3.12.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/firestore/-/firestore-3.12.1.tgz#39eeb357e2d522f4e7f7d837cdaee7cd32cffc68"
+  integrity sha1-Oe6zV+LVIvTn99g3za7nzTLP/Gg=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    "@firebase/webchannel-wrapper" "0.10.1"
+    "@grpc/grpc-js" "~1.7.0"
+    "@grpc/proto-loader" "^0.6.13"
+    node-fetch "2.6.7"
+    tslib "^2.1.0"
+
+"@firebase/functions-compat@0.3.5":
+  version "0.3.5"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/functions-compat/-/functions-compat-0.3.5.tgz#7a532d3a9764c6d5fbc1ec5541a989a704326647"
+  integrity sha1-elMtOpdkxtX7wexVQamJpwQyZkc=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/functions" "0.10.0"
+    "@firebase/functions-types" "0.6.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/functions-types@0.6.0":
+  version "0.6.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/functions-types/-/functions-types-0.6.0.tgz#ccd7000dc6fc668f5acb4e6a6a042a877a555ef2"
+  integrity sha1-zNcADcb8Zo9ay05qagQqh3pVXvI=
+
+"@firebase/functions@0.10.0":
+  version "0.10.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/functions/-/functions-0.10.0.tgz#c630ddf12cdf941c25bc8d554e30c3226cd560f6"
+  integrity sha1-xjDd8SzflBwlvI1VTjDDImzVYPY=
+  dependencies:
+    "@firebase/app-check-interop-types" "0.3.0"
+    "@firebase/auth-interop-types" "0.2.1"
+    "@firebase/component" "0.6.4"
+    "@firebase/messaging-interop-types" "0.2.0"
+    "@firebase/util" "1.9.3"
+    node-fetch "2.6.7"
+    tslib "^2.1.0"
+
+"@firebase/installations-compat@0.2.4":
+  version "0.2.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/installations-compat/-/installations-compat-0.2.4.tgz#b5557c897b4cd3635a59887a8bf69c3731aaa952"
+  integrity sha1-tVV8iXtM02NaWYh6i/acNzGqqVI=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/installations" "0.6.4"
+    "@firebase/installations-types" "0.5.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/installations-types@0.5.0":
+  version "0.5.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/installations-types/-/installations-types-0.5.0.tgz#2adad64755cd33648519b573ec7ec30f21fb5354"
+  integrity sha1-KtrWR1XNM2SFGbVz7H7DDyH7U1Q=
+
+"@firebase/installations@0.6.4":
+  version "0.6.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/installations/-/installations-0.6.4.tgz#20382e33e6062ac5eff4bede8e468ed4c367609e"
+  integrity sha1-IDguM+YGKsXv9L7ejkaO1MNnYJ4=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/util" "1.9.3"
+    idb "7.0.1"
+    tslib "^2.1.0"
+
+"@firebase/logger@0.4.0":
+  version "0.4.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/logger/-/logger-0.4.0.tgz#15ecc03c452525f9d47318ad9491b81d1810f113"
+  integrity sha1-FezAPEUlJfnUcxitlJG4HRgQ8RM=
+  dependencies:
+    tslib "^2.1.0"
+
+"@firebase/messaging-compat@0.2.4":
+  version "0.2.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/messaging-compat/-/messaging-compat-0.2.4.tgz#323ca48deef77065b4fcda3cfd662c4337dffcfd"
+  integrity sha1-Mjykje73cGW0/No8/WYsQzff/P0=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/messaging" "0.12.4"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/messaging-interop-types@0.2.0":
+  version "0.2.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/messaging-interop-types/-/messaging-interop-types-0.2.0.tgz#6056f8904a696bf0f7fdcf5f2ca8f008e8f6b064"
+  integrity sha1-YFb4kEppa/D3/c9fLKjwCOj2sGQ=
+
+"@firebase/messaging@0.12.4":
+  version "0.12.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/messaging/-/messaging-0.12.4.tgz#ccb49df5ab97d5650c9cf5b8c77ddc34daafcfe0"
+  integrity sha1-zLSd9auX1WUMnPW4x33cNNqvz+A=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/installations" "0.6.4"
+    "@firebase/messaging-interop-types" "0.2.0"
+    "@firebase/util" "1.9.3"
+    idb "7.0.1"
+    tslib "^2.1.0"
+
+"@firebase/performance-compat@0.2.4":
+  version "0.2.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/performance-compat/-/performance-compat-0.2.4.tgz#95cbf32057b5d9f0c75d804bc50e6ed3ba486274"
+  integrity sha1-lcvzIFe12fDHXYBLxQ5u07pIYnQ=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/performance" "0.6.4"
+    "@firebase/performance-types" "0.2.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/performance-types@0.2.0":
+  version "0.2.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/performance-types/-/performance-types-0.2.0.tgz#400685f7a3455970817136d9b48ce07a4b9562ff"
+  integrity sha1-QAaF96NFWXCBcTbZtIzgekuVYv8=
+
+"@firebase/performance@0.6.4":
+  version "0.6.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/performance/-/performance-0.6.4.tgz#0ad766bfcfab4f386f4fe0bef43bbcf505015069"
+  integrity sha1-Ctdmv8+rTzhvT+C+9Du89QUBUGk=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/installations" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/remote-config-compat@0.2.4":
+  version "0.2.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/remote-config-compat/-/remote-config-compat-0.2.4.tgz#1f494c81a6c9560b1f9ca1b4fbd4bbbe47cf4776"
+  integrity sha1-H0lMgabJVgsfnKG0+9S7vkfPR3Y=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/remote-config" "0.4.4"
+    "@firebase/remote-config-types" "0.3.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/remote-config-types@0.3.0":
+  version "0.3.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/remote-config-types/-/remote-config-types-0.3.0.tgz#689900dcdb3e5c059e8499b29db393e4e51314b4"
+  integrity sha1-aJkA3Ns+XAWehJmynbOT5OUTFLQ=
+
+"@firebase/remote-config@0.4.4":
+  version "0.4.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/remote-config/-/remote-config-0.4.4.tgz#6a496117054de58744bc9f382d2a6d1e14060c65"
+  integrity sha1-aklhFwVN5YdEvJ84LSptHhQGDGU=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/installations" "0.6.4"
+    "@firebase/logger" "0.4.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/storage-compat@0.3.2":
+  version "0.3.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/storage-compat/-/storage-compat-0.3.2.tgz#51a97170fd652a516f729f82b97af369e5a2f8d7"
+  integrity sha1-UalxcP1lKlFvcp+CuXrzaeWi+Nc=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/storage" "0.11.2"
+    "@firebase/storage-types" "0.8.0"
+    "@firebase/util" "1.9.3"
+    tslib "^2.1.0"
+
+"@firebase/storage-types@0.8.0":
+  version "0.8.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/storage-types/-/storage-types-0.8.0.tgz#f1e40a5361d59240b6e84fac7fbbbb622bfaf707"
+  integrity sha1-8eQKU2HVkkC26E+sf7u7Yiv69wc=
+
+"@firebase/storage@0.11.2":
+  version "0.11.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/storage/-/storage-0.11.2.tgz#c5e0316543fe1c4026b8e3910f85ad73f5b77571"
+  integrity sha1-xeAxZUP+HEAmuOORD4Wtc/W3dXE=
+  dependencies:
+    "@firebase/component" "0.6.4"
+    "@firebase/util" "1.9.3"
+    node-fetch "2.6.7"
+    tslib "^2.1.0"
+
+"@firebase/util@1.9.3":
+  version "1.9.3"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/util/-/util-1.9.3.tgz#45458dd5cd02d90e55c656e84adf6f3decf4b7ed"
+  integrity sha1-RUWN1c0C2Q5VxlboSt9vPez0t+0=
+  dependencies:
+    tslib "^2.1.0"
+
+"@firebase/webchannel-wrapper@0.10.1":
+  version "0.10.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.10.1.tgz#60bb2aaf129f9e00621f8d698722ddba6ee1f8ac"
+  integrity sha1-YLsqrxKfngBiH41phyLdum7h+Kw=
+
 "@fontsource/roboto@^5.0.1":
   version "5.0.1"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@fontsource/roboto/-/roboto-5.0.1.tgz#c9d374fc71553d356986b393ec8aace1bf740d58"
   integrity sha1-ydN0/HFVPTVphrOT7Iqs4b90DVg=
+
+"@grpc/grpc-js@~1.7.0":
+  version "1.7.3"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@grpc/grpc-js/-/grpc-js-1.7.3.tgz#f2ea79f65e31622d7f86d4b4c9ae38f13ccab99a"
+  integrity sha1-8up59l4xYi1/htS0ya448TzKuZo=
+  dependencies:
+    "@grpc/proto-loader" "^0.7.0"
+    "@types/node" ">=12.12.47"
+
+"@grpc/proto-loader@^0.6.13":
+  version "0.6.13"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@grpc/proto-loader/-/proto-loader-0.6.13.tgz#008f989b72a40c60c96cd4088522f09b05ac66bc"
+  integrity sha1-AI+Ym3KkDGDJbNQIhSLwmwWsZrw=
+  dependencies:
+    "@types/long" "^4.0.1"
+    lodash.camelcase "^4.3.0"
+    long "^4.0.0"
+    protobufjs "^6.11.3"
+    yargs "^16.2.0"
+
+"@grpc/proto-loader@^0.7.0":
+  version "0.7.7"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@grpc/proto-loader/-/proto-loader-0.7.7.tgz#d33677a77eea8407f7c66e2abd97589b60eb4b21"
+  integrity sha1-0zZ3p37qhAf3xm4qvZdYm2DrSyE=
+  dependencies:
+    "@types/long" "^4.0.1"
+    lodash.camelcase "^4.3.0"
+    long "^4.0.0"
+    protobufjs "^7.0.0"
+    yargs "^17.7.2"
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
@@ -646,10 +1055,91 @@
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@popperjs/core/-/core-2.11.7.tgz#ccab5c8f7dc557a52ca3288c10075c9ccd37fff7"
   integrity sha1-zKtcj33FV6UsoyiMEAdcnM03//c=
 
+"@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
+  version "1.1.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@protobufjs/aspromise/-/aspromise-1.1.2.tgz#9b8b0cc663d669a7d8f6f5d0893a14d348f30fbf"
+  integrity sha1-m4sMxmPWaafY9vXQiToU00jzD78=
+
+"@protobufjs/base64@^1.1.2":
+  version "1.1.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@protobufjs/base64/-/base64-1.1.2.tgz#4c85730e59b9a1f1f349047dbf24296034bb2735"
+  integrity sha1-TIVzDlm5ofHzSQR9vyQpYDS7JzU=
+
+"@protobufjs/codegen@^2.0.4":
+  version "2.0.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@protobufjs/codegen/-/codegen-2.0.4.tgz#7ef37f0d010fb028ad1ad59722e506d9262815cb"
+  integrity sha1-fvN/DQEPsCitGtWXIuUG2SYoFcs=
+
+"@protobufjs/eventemitter@^1.1.0":
+  version "1.1.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@protobufjs/eventemitter/-/eventemitter-1.1.0.tgz#355cbc98bafad5978f9ed095f397621f1d066b70"
+  integrity sha1-NVy8mLr61ZePntCV85diHx0Ga3A=
+
+"@protobufjs/fetch@^1.1.0":
+  version "1.1.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@protobufjs/fetch/-/fetch-1.1.0.tgz#ba99fb598614af65700c1619ff06d454b0d84c45"
+  integrity sha1-upn7WYYUr2VwDBYZ/wbUVLDYTEU=
+  dependencies:
+    "@protobufjs/aspromise" "^1.1.1"
+    "@protobufjs/inquire" "^1.1.0"
+
+"@protobufjs/float@^1.0.2":
+  version "1.0.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@protobufjs/float/-/float-1.0.2.tgz#5e9e1abdcb73fc0a7cb8b291df78c8cbd97b87d1"
+  integrity sha1-Xp4avctz/Ap8uLKR33jIy9l7h9E=
+
+"@protobufjs/inquire@^1.1.0":
+  version "1.1.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@protobufjs/inquire/-/inquire-1.1.0.tgz#ff200e3e7cf2429e2dcafc1140828e8cc638f089"
+  integrity sha1-/yAOPnzyQp4tyvwRQIKOjMY48Ik=
+
+"@protobufjs/path@^1.1.2":
+  version "1.1.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@protobufjs/path/-/path-1.1.2.tgz#6cc2b20c5c9ad6ad0dccfd21ca7673d8d7fbf68d"
+  integrity sha1-bMKyDFya1q0NzP0hynZz2Nf79o0=
+
+"@protobufjs/pool@^1.1.0":
+  version "1.1.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@protobufjs/pool/-/pool-1.1.0.tgz#09fd15f2d6d3abfa9b65bc366506d6ad7846ff54"
+  integrity sha1-Cf0V8tbTq/qbZbw2ZQbWrXhG/1Q=
+
+"@protobufjs/utf8@^1.1.0":
+  version "1.1.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@protobufjs/utf8/-/utf8-1.1.0.tgz#a777360b5b39a1a2e5106f8e858f2fd2d060c570"
+  integrity sha1-p3c2C1s5oaLlEG+OhY8v0tBgxXA=
+
+"@reduxjs/toolkit@^1.9.5":
+  version "1.9.5"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@reduxjs/toolkit/-/toolkit-1.9.5.tgz#d3987849c24189ca483baa7aa59386c8e52077c4"
+  integrity sha1-05h4ScJBicpIO6p6pZOGyOUgd8Q=
+  dependencies:
+    immer "^9.0.21"
+    redux "^4.2.1"
+    redux-thunk "^2.4.2"
+    reselect "^4.1.8"
+
 "@remix-run/router@1.6.2":
   version "1.6.2"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@remix-run/router/-/router-1.6.2.tgz#bbe75f8c59e0b7077584920ce2cc76f8f354934d"
   integrity sha1-u+dfjFngtwd1hJIM4sx2+PNUk00=
+
+"@types/hoist-non-react-statics@^3.3.1":
+  version "3.3.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha1-ESSq/lEYy1kZd66xzqrtEHDrA58=
+  dependencies:
+    "@types/react" "*"
+    hoist-non-react-statics "^3.3.0"
+
+"@types/long@^4.0.1":
+  version "4.0.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@types/long/-/long-4.0.2.tgz#b74129719fc8d11c01868010082d483b7545591a"
+  integrity sha1-t0EpcZ/I0RwBhoAQCC1IO3VFWRo=
+
+"@types/node@>=12.12.47", "@types/node@>=13.7.0":
+  version "20.2.5"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@types/node/-/node-20.2.5.tgz#26d295f3570323b2837d322180dfbf1ba156fefb"
+  integrity sha1-JtKV81cDI7KDfTIhgN+/G6FW/vs=
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
@@ -696,6 +1186,11 @@
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@types/scheduler/-/scheduler-0.16.3.tgz#cef09e3ec9af1d63d2a6cc5b383a737e24e6dcf5"
   integrity sha1-zvCePsmvHWPSpsxbODpzfiTm3PU=
 
+"@types/use-sync-external-store@^0.0.3":
+  version "0.0.3"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@types/use-sync-external-store/-/use-sync-external-store-0.0.3.tgz#b6725d5f4af24ace33b36fafd295136e75509f43"
+  integrity sha1-tnJdX0rySs4zs2+v0pUTbnVQn0M=
+
 "@vitejs/plugin-react@^4.0.0":
   version "4.0.0"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/@vitejs/plugin-react/-/plugin-react-4.0.0.tgz#46d1c37c507447d10467be1c111595174555ef28"
@@ -738,7 +1233,7 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-ansi-styles@^4.1.0:
+ansi-styles@^4.0.0, ansi-styles@^4.1.0:
   version "4.3.0"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/ansi-styles/-/ansi-styles-4.3.0.tgz#edd803628ae71c04c85ae7a0906edad34b648937"
   integrity sha1-7dgDYornHATIWuegkG7a00tkiTc=
@@ -862,6 +1357,24 @@ chalk@^4.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
+cliui@^7.0.2:
+  version "7.0.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/cliui/-/cliui-7.0.4.tgz#a0265ee655476fc807aea9df3df8df7783808b4f"
+  integrity sha1-oCZe5lVHb8gHrqnfPfjfd4OAi08=
+  dependencies:
+    string-width "^4.2.0"
+    strip-ansi "^6.0.0"
+    wrap-ansi "^7.0.0"
+
+cliui@^8.0.1:
+  version "8.0.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/cliui/-/cliui-8.0.1.tgz#0c04b075db02cbfe60dc8e6cf2f5486b1a3608aa"
+  integrity sha1-DASwddsCy/5g3I5s8vVIaxo2CKo=
+  dependencies:
+    string-width "^4.2.0"
+    strip-ansi "^6.0.1"
+    wrap-ansi "^7.0.0"
+
 clsx@^1.2.1:
   version "1.2.1"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/clsx/-/clsx-1.2.1.tgz#0ddc4a20a549b59c93a4116bb26f5294ca17dc12"
@@ -972,6 +1485,11 @@ electron-to-chromium@^1.4.284:
   version "1.4.402"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/electron-to-chromium/-/electron-to-chromium-1.4.402.tgz#9aa7bbb63081513127870af6d22f829344c5ba57"
   integrity sha1-mqe7tjCBUTEnhwr20i+Ck0TFulc=
+
+emoji-regex@^8.0.0:
+  version "8.0.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
+  integrity sha1-6Bj9ac5cz8tARZT4QpY79TFkzDc=
 
 error-ex@^1.3.1:
   version "1.3.2"
@@ -1232,6 +1750,13 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
+faye-websocket@0.11.4:
+  version "0.11.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/faye-websocket/-/faye-websocket-0.11.4.tgz#7f0d9275cfdd86a1c963dc8b65fcc451edcbb1da"
+  integrity sha1-fw2Sdc/dhqHJY9yLZfzEUe3Lsdo=
+  dependencies:
+    websocket-driver ">=0.5.1"
+
 file-entry-cache@^6.0.1:
   version "6.0.1"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/file-entry-cache/-/file-entry-cache-6.0.1.tgz#211b2dd9659cb0394b073e7323ac3c933d522027"
@@ -1251,6 +1776,38 @@ find-up@^5.0.0:
   dependencies:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
+
+firebase@^9.22.1:
+  version "9.22.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/firebase/-/firebase-9.22.1.tgz#9bf49d8cb87eefae6500cc2bd2ec1fddbc1c1ebb"
+  integrity sha1-m/SdjLh+765lAMwr0uwf3bwcHrs=
+  dependencies:
+    "@firebase/analytics" "0.10.0"
+    "@firebase/analytics-compat" "0.2.6"
+    "@firebase/app" "0.9.11"
+    "@firebase/app-check" "0.8.0"
+    "@firebase/app-check-compat" "0.3.7"
+    "@firebase/app-compat" "0.2.11"
+    "@firebase/app-types" "0.9.0"
+    "@firebase/auth" "0.23.2"
+    "@firebase/auth-compat" "0.4.2"
+    "@firebase/database" "0.14.4"
+    "@firebase/database-compat" "0.3.4"
+    "@firebase/firestore" "3.12.1"
+    "@firebase/firestore-compat" "0.3.10"
+    "@firebase/functions" "0.10.0"
+    "@firebase/functions-compat" "0.3.5"
+    "@firebase/installations" "0.6.4"
+    "@firebase/installations-compat" "0.2.4"
+    "@firebase/messaging" "0.12.4"
+    "@firebase/messaging-compat" "0.2.4"
+    "@firebase/performance" "0.6.4"
+    "@firebase/performance-compat" "0.2.4"
+    "@firebase/remote-config" "0.4.4"
+    "@firebase/remote-config-compat" "0.2.4"
+    "@firebase/storage" "0.11.2"
+    "@firebase/storage-compat" "0.3.2"
+    "@firebase/util" "1.9.3"
 
 flat-cache@^3.0.4:
   version "3.0.4"
@@ -1306,6 +1863,11 @@ gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/gensync/-/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
   integrity sha1-MqbudsPX9S1GsrGuXZP+qFgKJeA=
+
+get-caller-file@^2.0.5:
+  version "2.0.5"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/get-caller-file/-/get-caller-file-2.0.5.tgz#4f94412a82db32f36e3b0b9741f8a97feb031f7e"
+  integrity sha1-T5RBKoLbMvNuOwuXQfipf+sDH34=
 
 get-intrinsic@^1.0.2, get-intrinsic@^1.1.1, get-intrinsic@^1.1.3, get-intrinsic@^1.2.0:
   version "1.2.1"
@@ -1421,12 +1983,27 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-hoist-non-react-statics@^3.3.1:
+hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.1, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
   integrity sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=
   dependencies:
     react-is "^16.7.0"
+
+http-parser-js@>=0.5.1:
+  version "0.5.8"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/http-parser-js/-/http-parser-js-0.5.8.tgz#af23090d9ac4e24573de6f6aecc9d84a48bf20e3"
+  integrity sha1-ryMJDZrE4kVz3m9q7MnYSki/IOM=
+
+idb@7.0.1:
+  version "7.0.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/idb/-/idb-7.0.1.tgz#d2875b3a2f205d854ee307f6d196f246fea590a7"
+  integrity sha1-0odbOi8gXYVO4wf20ZbyRv6lkKc=
+
+idb@7.1.1:
+  version "7.1.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/idb/-/idb-7.1.1.tgz#d910ded866d32c7ced9befc5bfdf36f572ced72b"
+  integrity sha1-2RDe2GbTLHztm+/Fv9829XLO1ys=
 
 ignore@^5.2.0:
   version "5.2.4"
@@ -1437,6 +2014,11 @@ immediate@~3.0.5:
   version "3.0.6"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/immediate/-/immediate-3.0.6.tgz#9db1dbd0faf8de6fbe0f5dd5e56bb606280de69b"
   integrity sha1-nbHb0Pr43m++D13V5Wu2BigN5ps=
+
+immer@^9.0.21:
+  version "9.0.21"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/immer/-/immer-9.0.21.tgz#1e025ea31a40f24fb064f1fef23e931496330176"
+  integrity sha1-HgJeoxpA8k+wZPH+8j6TFJYzAXY=
 
 import-fresh@^3.0.0, import-fresh@^3.2.1:
   version "3.3.0"
@@ -1525,6 +2107,11 @@ is-extglob@^2.1.1:
   version "2.1.1"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/is-extglob/-/is-extglob-2.1.1.tgz#a88c02535791f02ed37c76a1b9ea9773c833f8c2"
   integrity sha1-qIwCU1eR8C7TfHahueqXc8gz+MI=
+
+is-fullwidth-code-point@^3.0.0:
+  version "3.0.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz#f116f8064fe90b3f7844a38997c0b75051269f1d"
+  integrity sha1-8Rb4Bk/pCz94RKOJl8C3UFEmnx0=
 
 is-glob@^4.0.0, is-glob@^4.0.3:
   version "4.0.3"
@@ -1681,10 +2268,25 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
+lodash.camelcase@^4.3.0:
+  version "4.3.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+  integrity sha1-soqmKIorn8ZRA1x3EfZathkDMaY=
+
 lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha1-VYqlO0O2YeGSWgr9+japoQhf5Xo=
+
+long@^4.0.0:
+  version "4.0.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/long/-/long-4.0.0.tgz#9a7b71cfb7d361a194ea555241c92f7468d5bf28"
+  integrity sha1-mntxz7fTYaGU6lVSQckvdGjVvyg=
+
+long@^5.0.0:
+  version "5.2.3"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/long/-/long-5.2.3.tgz#a3ba97f3877cf1d778eccbcb048525ebb77499e1"
+  integrity sha1-o7qX84d88dd47MvLBIUl67d0meE=
 
 loose-envify@^1.1.0, loose-envify@^1.4.0:
   version "1.4.0"
@@ -1729,6 +2331,13 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
+
+node-fetch@2.6.7:
+  version "2.6.7"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
+  integrity sha1-JN6fuoJ+O0rkTciyAlajeRYAUq0=
+  dependencies:
+    whatwg-url "^5.0.0"
 
 node-releases@^2.0.8:
   version "2.0.10"
@@ -1903,6 +2512,43 @@ prop-types@^15.6.2, prop-types@^15.8.1:
     object-assign "^4.1.1"
     react-is "^16.13.1"
 
+protobufjs@^6.11.3:
+  version "6.11.3"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/protobufjs/-/protobufjs-6.11.3.tgz#637a527205a35caa4f3e2a9a4a13ddffe0e7af74"
+  integrity sha1-Y3pScgWjXKpPPiqaShPd/+Dnr3Q=
+  dependencies:
+    "@protobufjs/aspromise" "^1.1.2"
+    "@protobufjs/base64" "^1.1.2"
+    "@protobufjs/codegen" "^2.0.4"
+    "@protobufjs/eventemitter" "^1.1.0"
+    "@protobufjs/fetch" "^1.1.0"
+    "@protobufjs/float" "^1.0.2"
+    "@protobufjs/inquire" "^1.1.0"
+    "@protobufjs/path" "^1.1.2"
+    "@protobufjs/pool" "^1.1.0"
+    "@protobufjs/utf8" "^1.1.0"
+    "@types/long" "^4.0.1"
+    "@types/node" ">=13.7.0"
+    long "^4.0.0"
+
+protobufjs@^7.0.0:
+  version "7.2.3"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/protobufjs/-/protobufjs-7.2.3.tgz#01af019e40d9c6133c49acbb3ff9e30f4f0f70b2"
+  integrity sha1-Aa8BnkDZxhM8Say7P/njD08PcLI=
+  dependencies:
+    "@protobufjs/aspromise" "^1.1.2"
+    "@protobufjs/base64" "^1.1.2"
+    "@protobufjs/codegen" "^2.0.4"
+    "@protobufjs/eventemitter" "^1.1.0"
+    "@protobufjs/fetch" "^1.1.0"
+    "@protobufjs/float" "^1.0.2"
+    "@protobufjs/inquire" "^1.1.0"
+    "@protobufjs/path" "^1.1.2"
+    "@protobufjs/pool" "^1.1.0"
+    "@protobufjs/utf8" "^1.1.0"
+    "@types/node" ">=13.7.0"
+    long "^5.0.0"
+
 punycode@^2.1.0:
   version "2.3.0"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/punycode/-/punycode-2.3.0.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"
@@ -1926,10 +2572,22 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
-react-is@^18.2.0:
+react-is@^18.0.0, react-is@^18.2.0:
   version "18.2.0"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha1-GZQx7qqi4J+GQn77tPFHPttHYJs=
+
+react-redux@^8.0.7:
+  version "8.0.7"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/react-redux/-/react-redux-8.0.7.tgz#b74ef2f7ce2076e354540aa3511d3670c2b62571"
+  integrity sha1-t07y984gduNUVAqjUR02cMK2JXE=
+  dependencies:
+    "@babel/runtime" "^7.12.1"
+    "@types/hoist-non-react-statics" "^3.3.1"
+    "@types/use-sync-external-store" "^0.0.3"
+    hoist-non-react-statics "^3.3.2"
+    react-is "^18.0.0"
+    use-sync-external-store "^1.0.0"
 
 react-refresh@^0.14.0:
   version "0.14.0"
@@ -1968,6 +2626,18 @@ react@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
 
+redux-thunk@^2.4.2:
+  version "2.4.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/redux-thunk/-/redux-thunk-2.4.2.tgz#b9d05d11994b99f7a91ea223e8b04cf0afa5ef3b"
+  integrity sha1-udBdEZlLmfepHqIj6LBM8K+l7zs=
+
+redux@^4.2.1:
+  version "4.2.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/redux/-/redux-4.2.1.tgz#c08f4306826c49b5e9dc901dee0452ea8fce6197"
+  integrity sha1-wI9DBoJsSbXp3JAd7gRS6o/OYZc=
+  dependencies:
+    "@babel/runtime" "^7.9.2"
+
 regenerator-runtime@^0.13.11:
   version "0.13.11"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
@@ -1986,6 +2656,16 @@ remove-accents@0.4.2:
   version "0.4.2"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/remove-accents/-/remove-accents-0.4.2.tgz#0a43d3aaae1e80db919e07ae254b285d9e1c7bb5"
   integrity sha1-CkPTqq4egNuRngeuJUsoXZ4ce7U=
+
+require-directory@^2.1.1:
+  version "2.1.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
+  integrity sha1-jGStX9MNqxyXbiNE/+f3kqam30I=
+
+reselect@^4.1.8:
+  version "4.1.8"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/reselect/-/reselect-4.1.8.tgz#3f5dc671ea168dccdeb3e141236f69f02eaec524"
+  integrity sha1-P13GceoWjczes+FBI29p8C6uxSQ=
 
 resolve-from@^4.0.0:
   version "4.0.0"
@@ -2035,6 +2715,11 @@ run-parallel@^1.1.9:
   integrity sha1-ZtE2jae9+SHrnZW9GpIp5/IaQ+4=
   dependencies:
     queue-microtask "^1.2.2"
+
+safe-buffer@>=5.1.0:
+  version "5.2.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
+  integrity sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=
 
 safe-regex-test@^1.0.0:
   version "1.0.0"
@@ -2095,6 +2780,15 @@ source-map@^0.5.7:
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   integrity sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
 
+string-width@^4.1.0, string-width@^4.2.0, string-width@^4.2.3:
+  version "4.2.3"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha1-JpxxF9J7Ba0uU2gwqOyJXvnG0BA=
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
 string.prototype.matchall@^4.0.8:
   version "4.0.8"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/string.prototype.matchall/-/string.prototype.matchall-4.0.8.tgz#3bf85722021816dcd1bf38bb714915887ca79fd3"
@@ -2136,7 +2830,7 @@ string.prototype.trimstart@^1.0.6:
     define-properties "^1.1.4"
     es-abstract "^1.20.4"
 
-strip-ansi@^6.0.1:
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha1-nibGPTD1NEPpSJSVshBdN7Z6hdk=
@@ -2181,6 +2875,16 @@ to-fast-properties@^2.0.0:
   version "2.0.0"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/to-fast-properties/-/to-fast-properties-2.0.0.tgz#dc5e698cbd079265bc73e0377681a4e4e83f616e"
   integrity sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
+
+tr46@~0.0.3:
+  version "0.0.3"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
+  integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
+
+tslib@^2.1.0:
+  version "2.5.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/tslib/-/tslib-2.5.2.tgz#1b6f07185c881557b0ffa84b111a0106989e8338"
+  integrity sha1-G28HGFyIFVew/6hLERoBBpiegzg=
 
 type-check@^0.4.0, type-check@~0.4.0:
   version "0.4.0"
@@ -2228,6 +2932,16 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+use-sync-external-store@^1.0.0:
+  version "1.2.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
+  integrity sha1-fb79bvP+TnZ6DPXXKHqs+1hGkoo=
+
+validator@^13.9.0:
+  version "13.9.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/validator/-/validator-13.9.0.tgz#33e7b85b604f3bbce9bb1a05d5c3e22e1c2ff855"
+  integrity sha1-M+e4W2BPO7zpuxoF1cPiLhwv+FU=
+
 vite@^4.3.2:
   version "4.3.8"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/vite/-/vite-4.3.8.tgz#70cd6a294ab52d7fb8f37f5bc63d117dd19e9918"
@@ -2238,6 +2952,33 @@ vite@^4.3.2:
     rollup "^3.21.0"
   optionalDependencies:
     fsevents "~2.3.2"
+
+webidl-conversions@^3.0.0:
+  version "3.0.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
+  integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
+
+websocket-driver@>=0.5.1:
+  version "0.7.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/websocket-driver/-/websocket-driver-0.7.4.tgz#89ad5295bbf64b480abcba31e4953aca706f5760"
+  integrity sha1-ia1Slbv2S0gKvLox5JU6ynBvV2A=
+  dependencies:
+    http-parser-js ">=0.5.1"
+    safe-buffer ">=5.1.0"
+    websocket-extensions ">=0.1.1"
+
+websocket-extensions@>=0.1.1:
+  version "0.1.4"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/websocket-extensions/-/websocket-extensions-0.1.4.tgz#7f8473bc839dfd87608adb95d7eb075211578a42"
+  integrity sha1-f4RzvIOd/YdgituV1+sHUhFXikI=
+
+whatwg-url@^5.0.0:
+  version "5.0.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
+  integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
+  dependencies:
+    tr46 "~0.0.3"
+    webidl-conversions "^3.0.0"
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
@@ -2274,10 +3015,24 @@ word-wrap@^1.2.3:
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha1-YQY29rH3A4kb00dxzLF/uTtHB5w=
 
+wrap-ansi@^7.0.0:
+  version "7.0.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
+  integrity sha1-Z+FFz/UQpqaYS98RUpEdadLrnkM=
+  dependencies:
+    ansi-styles "^4.0.0"
+    string-width "^4.1.0"
+    strip-ansi "^6.0.0"
+
 wrappy@1:
   version "1.0.2"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+
+y18n@^5.0.5:
+  version "5.0.8"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/y18n/-/y18n-5.0.8.tgz#7f4934d0f7ca8c56f95314939ddcd2dd91ce1d55"
+  integrity sha1-f0k00PfKjFb5UxSTndzS3ZHOHVU=
 
 yallist@^3.0.2:
   version "3.1.1"
@@ -2288,6 +3043,42 @@ yaml@^1.10.0:
   version "1.10.2"
   resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/yaml/-/yaml-1.10.2.tgz#2301c5ffbf12b467de8da2333a459e29e7920e4b"
   integrity sha1-IwHF/78StGfejaIzOkWeKeeSDks=
+
+yargs-parser@^20.2.2:
+  version "20.2.9"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/yargs-parser/-/yargs-parser-20.2.9.tgz#2eb7dc3b0289718fc295f362753845c41a0c94ee"
+  integrity sha1-LrfcOwKJcY/ClfNidThFxBoMlO4=
+
+yargs-parser@^21.1.1:
+  version "21.1.1"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/yargs-parser/-/yargs-parser-21.1.1.tgz#9096bceebf990d21bb31fa9516e0ede294a77d35"
+  integrity sha1-kJa87r+ZDSG7MfqVFuDt4pSnfTU=
+
+yargs@^16.2.0:
+  version "16.2.0"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/yargs/-/yargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
+  integrity sha1-HIK/D2tqZur85+8w43b0mhJHf2Y=
+  dependencies:
+    cliui "^7.0.2"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.0"
+    y18n "^5.0.5"
+    yargs-parser "^20.2.2"
+
+yargs@^17.7.2:
+  version "17.7.2"
+  resolved "https://pkgs.dev.azure.com/hexagonPPMInnerSource/_packaging/PPM/npm/registry/yargs/-/yargs-17.7.2.tgz#991df39aca675a192b816e1e0363f9d75d2aa269"
+  integrity sha1-mR3zmspnWhkrgW4eA2P5110qomk=
+  dependencies:
+    cliui "^8.0.1"
+    escalade "^3.1.1"
+    get-caller-file "^2.0.5"
+    require-directory "^2.1.1"
+    string-width "^4.2.3"
+    y18n "^5.0.5"
+    yargs-parser "^21.1.1"
 
 yocto-queue@^0.1.0:
   version "0.1.0"
